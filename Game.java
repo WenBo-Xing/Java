@@ -105,6 +105,9 @@ public class Game {
                     player.setBet(player.getBet() * 2);
                     player.getHandCards().add(deck.getCard());
                     player.showCard();
+                    
+                    play();
+                    
 
                     if (BlackJacKRule.isPlayerOver(player)) {
                         playerlose();
